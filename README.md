@@ -1,7 +1,11 @@
-# gityup
+#Gityup
 Simple nodejs git library.
+This library just wraps around common git cli commands and allows you to manipulate git through nodejs.
 
-# Very basic initial usage
+#Installation
+*Must have [Git cli](https://git-scm.com/downloads) installed.
+
+#Very basic initial usage
 
 ```
 const gity = require(./gityup);
