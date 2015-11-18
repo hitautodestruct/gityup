@@ -1,12 +1,12 @@
-var exec = require('child_process').exec;
+var exec = require('child_process').execSync;
 
-module.exports = function () {
+module.exports = (function () {
 
   var REPO = '';
 
   // Setup repo name so we can access outside of the folder
-  var setup = function ( repo_name ) {
-    REPO = repo_name;
+  var setup = function ( repo_path ) {
+    REPO = repo_path;
   };
 
   // Returns the git path with the command
@@ -22,7 +22,7 @@ module.exports = function () {
 
   // Excutes given command and outputs result
   var execute = function ( command ) {
-      exec( command, log_result);
+      exec( command );
   };
 
   // Clone the directory via http url
@@ -63,4 +63,4 @@ module.exports = function () {
     pull
   };
 
-};
+})();
