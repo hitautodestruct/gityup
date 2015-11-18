@@ -47,11 +47,20 @@ module.exports = function () {
     execute( command );
   };
 
+  // Pull from repo on current branch
+  var pull = function () {
+    var git_path = get_git_path(),
+        command = git_path + ' pull';
+
+    execute( command );
+  };
+
   return {
     setup,
     clone,
     checkout,
-    status
+    status,
+    pull
   };
 
 };
