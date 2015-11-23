@@ -21,5 +21,6 @@
   "bugs": {
     "url": "https://github.com/hitautodestruct/gityup/issues"
   },
-  "homepage": "https://github.com/hitautodestruct/gityup"
+  "homepage": "https://github.com/hitautodestruct/gityup",
+  "engines" : { "node" : ">=4.1.1" }
 }
